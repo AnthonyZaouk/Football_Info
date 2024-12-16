@@ -12,7 +12,6 @@ class PageHeader extends LitElement {
             font-family: trebuchet MS;
             color: green;
         }
-        img { border: 1px solid black; width: 100px; height: 100px; }
         
     `;
 
@@ -20,7 +19,18 @@ class PageHeader extends LitElement {
         return html`
         <header>
         <h1>${this.title}</h1>
-        </header>`
+        </header>
+        
+        <body>
+        <a href="index.html">Home</a>
+        <a href="aleague.html">A-League</a>
+        <a href="prem.html">Premier League</a>
+        <a href="serie-a.html">Serie A</a>
+        </body>
+        
+        `
+
+        
     }
 }
 customElements.define('page-header', PageHeader);
